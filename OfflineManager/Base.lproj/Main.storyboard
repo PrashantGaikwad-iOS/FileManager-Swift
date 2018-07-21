@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TvZ-dH-pdf">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FileManager iOS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OfflineManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark-basarab-744219-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GUT-Gz-Mbt">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-ab-LMO">
+                                <rect key="frame" x="20" y="85" width="627" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.92549019610000005" alpha="0.33706536091549294" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ser-yL-56R"/>
+                                </constraints>
+                                <color key="textColor" red="0.96862745100000003" green="0.2549999952" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Designation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eW8-Xy-pdz">
+                                <rect key="frame" x="20" y="123" width="627" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.92549019610000005" alpha="0.33706536091549294" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TOk-JR-Fer"/>
+                                </constraints>
+                                <color key="textColor" red="0.96862745100000003" green="0.2549999952" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sf-bw-I5V">
+                                <rect key="frame" x="20" y="186" width="627" height="50"/>
+                                <color key="backgroundColor" red="0.75016741071428572" green="0.63844866071428574" blue="0.61297433035714288" alpha="0.49317781690140844" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YXX-EC-rFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="saveJsonDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye5-ZK-ZEm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I77-e1-4Qd">
+                                <rect key="frame" x="20" y="254" width="627" height="50"/>
+                                <color key="backgroundColor" red="0.75016741071428572" green="0.63844866071428574" blue="0.61297433035714288" alpha="0.49317781690140844" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zPc-sF-m2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getJsonFromDbAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUH-se-nI8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Save or Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jV0-WG-P66">
+                                <rect key="frame" x="20" y="47" width="627" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.92549019610000005" alpha="0.33706536091549294" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oBW-1Z-uj7"/>
+                                </constraints>
+                                <color key="textColor" red="0.96862745100000003" green="0.2549999952" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GUT-Gz-Mbt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2cp-ap-Hdc"/>
+                            <constraint firstItem="eW8-Xy-pdz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="51x-xR-Rdc"/>
+                            <constraint firstItem="3Sf-bw-I5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E1c-zg-NeY"/>
+                            <constraint firstItem="GUT-Gz-Mbt" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="EQ6-eE-yyF"/>
+                            <constraint firstItem="3Sf-bw-I5V" firstAttribute="top" secondItem="eW8-Xy-pdz" secondAttribute="bottom" constant="33" id="Pzg-eK-OSY"/>
+                            <constraint firstItem="GUT-Gz-Mbt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WbD-U3-U0w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aDd-ab-LMO" secondAttribute="trailing" constant="20" id="WoL-Bz-6ZB"/>
+                            <constraint firstItem="I77-e1-4Qd" firstAttribute="top" secondItem="3Sf-bw-I5V" secondAttribute="bottom" constant="18" id="Ye2-wD-UF4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jV0-WG-P66" secondAttribute="trailing" constant="20" id="gAG-VX-EMV"/>
+                            <constraint firstItem="jV0-WG-P66" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="gmK-pm-UQE"/>
+                            <constraint firstItem="aDd-ab-LMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="leK-Cq-vQj"/>
+                            <constraint firstItem="GUT-Gz-Mbt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="neH-i4-riS"/>
+                            <constraint firstItem="jV0-WG-P66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oXe-p3-1ph"/>
+                            <constraint firstItem="eW8-Xy-pdz" firstAttribute="top" secondItem="aDd-ab-LMO" secondAttribute="bottom" constant="8" id="s4V-bz-qoB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sf-bw-I5V" secondAttribute="trailing" constant="20" id="sbX-lR-nXV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I77-e1-4Qd" secondAttribute="trailing" constant="20" id="uax-G5-Ag4"/>
+                            <constraint firstItem="aDd-ab-LMO" firstAttribute="top" secondItem="jV0-WG-P66" secondAttribute="bottom" constant="8" id="xAw-WL-kXw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eW8-Xy-pdz" secondAttribute="trailing" constant="20" id="zJs-Ui-lKs"/>
+                            <constraint firstItem="I77-e1-4Qd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zal-xn-5Mf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="FileManager iOS" id="2Se-Qa-dck"/>
+                    <connections>
+                        <outlet property="designationTextField" destination="eW8-Xy-pdz" id="NIL-qi-EAX"/>
+                        <outlet property="fileNameTextField" destination="jV0-WG-P66" id="wjV-6s-arI"/>
+                        <outlet property="fullNameTextField" destination="aDd-ab-LMO" id="Sr1-05-xiV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="926.98650674662679" y="98.400000000000006"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lD2-pM-9di">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TvZ-dH-pdf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DHd-53-cXu">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XKf-eY-YVG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qof-un-3Uq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="98.400000000000006"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mark-basarab-744219-unsplash.jpg" width="5184" height="3888"/>
+    </resources>
 </document>

@@ -14,6 +14,7 @@
 		894C07072101B4D1006EA137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894C07052101B4D1006EA137 /* LaunchScreen.storyboard */; };
 		894C07122101B4D1006EA137 /* OfflineManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C07112101B4D1006EA137 /* OfflineManagerTests.swift */; };
 		894C071D2101B4D1006EA137 /* OfflineManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C071C2101B4D1006EA137 /* OfflineManagerUITests.swift */; };
+		894C072D2101E9BE006EA137 /* mark-basarab-744219-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 894C072C2101E9BE006EA137 /* mark-basarab-744219-unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		894C07182101B4D1006EA137 /* OfflineManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfflineManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		894C071C2101B4D1006EA137 /* OfflineManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineManagerUITests.swift; sourceTree = "<group>"; };
 		894C071E2101B4D1006EA137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894C072C2101E9BE006EA137 /* mark-basarab-744219-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mark-basarab-744219-unsplash.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				894C06FC2101B4CE006EA137 /* AppDelegate.swift */,
+				894C072C2101E9BE006EA137 /* mark-basarab-744219-unsplash.jpg */,
 				894C06FE2101B4CE006EA137 /* ViewController.swift */,
 				894C07002101B4CE006EA137 /* Main.storyboard */,
 				894C07032101B4D1006EA137 /* Assets.xcassets */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894C072D2101E9BE006EA137 /* mark-basarab-744219-unsplash.jpg in Resources */,
 				894C07072101B4D1006EA137 /* LaunchScreen.storyboard in Resources */,
 				894C07042101B4D1006EA137 /* Assets.xcassets in Resources */,
 				894C07022101B4CE006EA137 /* Main.storyboard in Resources */,
